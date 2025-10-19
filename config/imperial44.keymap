@@ -133,9 +133,9 @@
         base_en {
             bindings = <
 &kp GRAVE  &kp Q         &kp W        &kp E        &kp R         &kp T                                &kp Y            &kp U         &kp I        &kp O        &kp P            &none
-&kp ESC    &hml LCTRL A  &hml LALT S  &hml LGUI D  &hml LSHFT F  &kp G                                &kp H            &hml LSHFT J  &hml LGUI K  &hml LALT L  &hml LCTRL SEMI  &kp SINGLE_QUOTE
+&kp ESC    &hml LCTRL A  &hml LALT S  &hml LGUI D  &hml LSHFT F  &kp G                                &kp H            &hmr LSHFT J  &hmr LGUI K  &hmr LALT L  &hmr LCTRL SEMI  &kp SINGLE_QUOTE
 &none      &kp Z         &kp X        &kp C        &kp V         &kp B        &none        &none      &kp N            &kp M         &kp COMMA    &kp DOT      &kp SLASH        &kp BACKSLASH
-                                                   &lt 2 TAB     &lt 3 SPACE  &kp ENTER    &kp ENTER  &lt 3 BACKSPACE  &lt 2 DEL
+                                                   &lt 4 TAB     &lt 2 SPACE  &kp ENTER    &kp ENTER  &lt 2 BACKSPACE  &lt 4 DEL
             >;
 
             display-name = "EN";
@@ -148,14 +148,35 @@
             display-name = "RU";
             bindings = <
 &kp RU_CYRILLIC_IO  &kp RU_CYRILLIC_SHORT_I    &kp RU_CYRILLIC_TSE         &kp RU_CYRILLIC_U         &kp RU_CYRILLIC_KA        &ie_io                                      &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE       &kp RU_CYRILLIC_SHA       &kp RU_CYRILLIC_SHCHA     &kp RU_CYRILLIC_ZE          &kp RU_CYRILLIC_HA
-&kp ESC             &hml LCTRL RU_CYRILLIC_EF  &hml LALT RU_CYRILLIC_YERU  &hml LGUI RU_CYRILLIC_VE  &hml LSHFT RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                          &kp RU_CYRILLIC_ER  &hml LSHFT RU_CYRILLIC_O  &hml LGUI RU_CYRILLIC_EL  &hml LALT RU_CYRILLIC_DE  &hml LCTRL RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
+&kp ESC             &hml LCTRL RU_CYRILLIC_EF  &hml LALT RU_CYRILLIC_YERU  &hml LGUI RU_CYRILLIC_VE  &hml LSHFT RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                          &kp RU_CYRILLIC_ER  &hmr LSHFT RU_CYRILLIC_O  &hmr LGUI RU_CYRILLIC_EL  &hmr LALT RU_CYRILLIC_DE  &hmr LCTRL RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
 &none               &kp RU_CYRILLIC_YA         &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES        &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I   &none        &none      &kp RU_CYRILLIC_TE  &soft_sign_soft_hard      &kp RU_CYRILLIC_BE        &kp RU_CYRILLIC_YU        &kp SLASH                   &kp BACKSLASH
-                                                                                                     &kp TAB                   &kp SPACE           &kp ENTER    &kp ENTER  &kp BACKSPACE       &kp DEL
+                                                                                                     &lt 4 TAB                 &lt 3 SPACE         &kp ENTER    &kp ENTER  &lt 3 BACKSPACE     &lt 4 DELETE
             >;
 
             sensor-bindings =
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>,
                 <&inc_dec_kp PG_UP PG_DN>;
+        };
+
+        sym_en {
+            bindings = <
+&trans  &kp AT    &kp LT    &kp EQUAL  &kp GT    &kp GRAVE                    &kp CARET  &kp LBKT  &kp UNDER  &kp RBKT  &trans    &trans
+&trans  &kp BSLH  &kp LPAR  &kp MINUS  &kp RPAR  &kp PLUS                     &kp PRCNT  &kp LBRC  &kp SEMI   &kp RBRC  &kp EXCL  &trans
+&trans  &kp HASH  &kp STAR  &kp COLON  &kp FSLH  &trans     &trans    &trans  &trans     &kp PIPE  &kp TILDE  &kp AMPS  &kp DLLR  &trans
+                                       &trans    &mo 6      &trans    &trans  &trans     &trans
+            >;
+
+            display-name = "Symbols EN";
+        };
+
+        sym_ru {
+            display-name = "Symbols RU";
+            bindings = <
+&trans  &kp AT    &kp LT    &kp EQUAL  &kp GT    &kp GRAVE                    &kp CARET  &kp LBKT  &kp UNDER  &kp RBKT  &trans    &trans
+&trans  &kp BSLH  &kp LPAR  &kp MINUS  &kp RPAR  &kp PLUS                     &kp PRCNT  &kp LBRC  &kp SEMI   &kp RBRC  &kp EXCL  &trans
+&trans  &kp HASH  &kp STAR  &kp COLON  &kp FSLH  &trans     &trans    &trans  &trans     &kp PIPE  &kp TILDE  &kp AMPS  &kp DLLR  &trans
+                                       &trans    &mo 6      &trans    &trans  &trans     &trans
+            >;
         };
 
         nav {
@@ -167,27 +188,6 @@
             >;
 
             display-name = "Navigation";
-        };
-
-        sym_en {
-            bindings = <
-&trans  &kp AT    &kp LT    &kp EQUAL  &kp GT    &kp GRAVE                    &kp CARET  &kp LBKT  &kp UNDER  &kp RBKT  &trans    &trans
-&trans  &kp BSLH  &kp LPAR  &kp MINUS  &kp RPAR  &kp PLUS                     &kp PRCNT  &kp LBRC  &kp SEMI   &kp RBRC  &kp EXCL  &trans
-&trans  &kp HASH  &kp STAR  &kp COLON  &kp FSLH  &trans     &trans    &trans  &trans     &kp PIPE  &kp TILDE  &kp AMPS  &kp DLLR  &trans
-                                       &trans    &mo 5      &trans    &trans  &trans     &trans
-            >;
-
-            display-name = "Symbols";
-        };
-
-        sym_ru {
-            display-name = "Symbols";
-            bindings = <
-&trans  &kp AT    &kp LT    &kp EQUAL  &kp GT    &kp GRAVE                    &kp CARET  &kp LBKT  &kp UNDER  &kp RBKT  &trans    &trans
-&trans  &kp BSLH  &kp LPAR  &kp MINUS  &kp RPAR  &kp PLUS                     &kp PRCNT  &kp LBRC  &kp SEMI   &kp RBRC  &kp EXCL  &trans
-&trans  &kp HASH  &kp STAR  &kp COLON  &kp FSLH  &trans     &trans    &trans  &trans     &kp PIPE  &kp TILDE  &kp AMPS  &kp DLLR  &trans
-                                       &trans    &mo 5      &trans    &trans  &trans     &trans
-            >;
         };
 
         adj {
