@@ -55,15 +55,45 @@
         };
     };
 
+    macros {
+        layer_en: layer_en {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 0 &leng_to_en>;
+            label = "LAYER_EN";
+        };
+
+        layer_ru: layer_ru {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 1 &leng_to_ru>;
+            label = "LAYER_RU";
+        };
+
+        leng_to_en: leng_to_en {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(SPACE)>;
+            label = "LENG_TO_EN";
+        };
+
+        leng_to_ru: leng_to_ru {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(SPACE)>;
+            label = "LENG_TO_RU";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
-        base {
+        base_en {
             bindings = <
-&kp GRAVE  &kp Q         &kp W        &kp E        &kp R         &kp T                              &kp Y          &kp U         &kp I        &kp O        &kp P            &none
-&kp ESC    &hml LCTRL A  &hml LALT S  &hml LGUI D  &hml LSHFT F  &kp G                              &kp H          &hml LSHFT J  &hml LGUI K  &hml LALT L  &hml LCTRL SEMI  &kp SINGLE_QUOTE
-&none      &kp Z         &kp X        &kp C        &kp V         &kp B      &none        &none      &kp N          &kp M         &kp COMMA    &kp DOT      &kp SLASH        &kp BACKSLASH
-                                                   &lt 2 TAB     &kp SPACE  &kp ENTER    &kp ENTER  &kp BACKSPACE  &lt 2 DEL
+&kp GRAVE  &kp Q         &kp W        &kp E        &kp R         &kp T                                &kp Y            &kp U         &kp I        &kp O        &kp P            &none
+&kp ESC    &hml LCTRL A  &hml LALT S  &hml LGUI D  &hml LSHFT F  &kp G                                &kp H            &hml LSHFT J  &hml LGUI K  &hml LALT L  &hml LCTRL SEMI  &kp SINGLE_QUOTE
+&none      &kp Z         &kp X        &kp C        &kp V         &kp B        &none        &none      &kp N            &kp M         &kp COMMA    &kp DOT      &kp SLASH        &kp BACKSLASH
+                                                   &lt 2 TAB     &lt 3 SPACE  &kp ENTER    &kp ENTER  &lt 3 BACKSPACE  &lt 2 DEL
             >;
 
             display-name = "Base";
@@ -72,7 +102,7 @@
                 <&inc_dec_kp PG_UP PG_DN>;
         };
 
-        layer_4 {
+        base_ru {
             display-name = "Base";
             bindings = <
 &kp RU_CYRILLIC_IO  &kp RU_CYRILLIC_SHORT_I    &kp RU_CYRILLIC_TSE         &kp RU_CYRILLIC_U         &kp RU_CYRILLIC_KA        &ie_io                                      &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE       &kp RU_CYRILLIC_SHA       &kp RU_CYRILLIC_SHCHA     &kp RU_CYRILLIC_ZE          &kp RU_CYRILLIC_HA
@@ -97,15 +127,25 @@
             display-name = "Navigation";
         };
 
-        sym {
+        sym_en {
             bindings = <
 &trans  &kp AT    &kp LT    &kp EQUAL  &kp GT    &kp GRAVE                    &kp CARET  &kp LBKT  &kp UNDER  &kp RBKT  &trans    &trans
 &trans  &kp BSLH  &kp LPAR  &kp MINUS  &kp RPAR  &kp PLUS                     &kp PRCNT  &kp LBRC  &kp SEMI   &kp RBRC  &kp EXCL  &trans
 &trans  &kp HASH  &kp STAR  &kp COLON  &kp FSLH  &trans     &trans    &trans  &trans     &kp PIPE  &kp TILDE  &kp AMPS  &kp DLLR  &trans
-                                       &trans    &mo 4      &trans    &trans  &trans     &trans
+                                       &trans    &mo 5      &trans    &trans  &trans     &trans
             >;
 
             display-name = "Symbols";
+        };
+
+        sym_ru {
+            display-name = "Symbols";
+            bindings = <
+&trans  &kp AT    &kp LT    &kp EQUAL  &kp GT    &kp GRAVE                    &kp CARET  &kp LBKT  &kp UNDER  &kp RBKT  &trans    &trans
+&trans  &kp BSLH  &kp LPAR  &kp MINUS  &kp RPAR  &kp PLUS                     &kp PRCNT  &kp LBRC  &kp SEMI   &kp RBRC  &kp EXCL  &trans
+&trans  &kp HASH  &kp STAR  &kp COLON  &kp FSLH  &trans     &trans    &trans  &trans     &kp PIPE  &kp TILDE  &kp AMPS  &kp DLLR  &trans
+                                       &trans    &mo 5      &trans    &trans  &trans     &trans
+            >;
         };
 
         adj {
