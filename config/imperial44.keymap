@@ -33,6 +33,26 @@
             flavor = "balanced";
             hold-trigger-on-release;
         };
+
+        ie_io: ie_io {
+            compatible = "zmk,behavior-tap-dance";
+            label = "IE_IO";
+            #binding-cells = <0>;
+            bindings = <&kp RU_CYRILLIC_IE>, <&kp RU_CYRILLIC_IO>;
+
+            tapping-term-ms = <200>;
+        };
+
+        soft_sign_soft_hard: soft_sign_soft_hard {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SOFT_SIGN_SOFT_HARD";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LC(RU_CYRILLIC_SOFT_SIGN)>,
+                <&kp RU_CYRILLIC_HARD_SIGN>;
+
+            tapping-term-ms = <200>;
+        };
     };
 
     keymap {
@@ -43,10 +63,24 @@
 &kp GRAVE  &kp Q         &kp W        &kp E        &kp R         &kp T                              &kp Y          &kp U         &kp I        &kp O        &kp P            &none
 &kp ESC    &hml LCTRL A  &hml LALT S  &hml LGUI D  &hml LSHFT F  &kp G                              &kp H          &hml LSHFT J  &hml LGUI K  &hml LALT L  &hml LCTRL SEMI  &kp SINGLE_QUOTE
 &none      &kp Z         &kp X        &kp C        &kp V         &kp B      &none        &none      &kp N          &kp M         &kp COMMA    &kp DOT      &kp SLASH        &kp BACKSLASH
-                                                   &kp TAB       &kp SPACE  &kp ENTER    &kp ENTER  &kp BACKSPACE  &kp DEL
+                                                   &lt 2 TAB     &kp SPACE  &kp ENTER    &kp ENTER  &kp BACKSPACE  &lt 2 DEL
             >;
 
             display-name = "Base";
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp PG_UP PG_DN>;
+        };
+
+        layer_4 {
+            display-name = "Base";
+            bindings = <
+&kp RU_CYRILLIC_IO  &kp RU_CYRILLIC_SHORT_I    &kp RU_CYRILLIC_TSE         &kp RU_CYRILLIC_U         &kp RU_CYRILLIC_KA        &ie_io                                      &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE       &kp RU_CYRILLIC_SHA       &kp RU_CYRILLIC_SHCHA     &kp RU_CYRILLIC_ZE          &kp RU_CYRILLIC_HA
+&kp ESC             &hml LCTRL RU_CYRILLIC_EF  &hml LALT RU_CYRILLIC_YERU  &hml LGUI RU_CYRILLIC_VE  &hml LSHFT RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                          &kp RU_CYRILLIC_ER  &hml LSHFT RU_CYRILLIC_O  &hml LGUI RU_CYRILLIC_EL  &hml LALT RU_CYRILLIC_DE  &hml LCTRL RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
+&none               &kp RU_CYRILLIC_YA         &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES        &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I   &none        &none      &kp RU_CYRILLIC_TE  &soft_sign_soft_hard      &kp RU_CYRILLIC_BE        &kp RU_CYRILLIC_YU        &kp SLASH                   &kp BACKSLASH
+                                                                                                     &kp TAB                   &kp SPACE           &kp ENTER    &kp ENTER  &kp BACKSPACE       &kp DEL
+            >;
+
             sensor-bindings =
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>,
                 <&inc_dec_kp PG_UP PG_DN>;
@@ -68,7 +102,7 @@
 &trans  &kp AT    &kp LT    &kp EQUAL  &kp GT    &kp GRAVE                    &kp CARET  &kp LBKT  &kp UNDER  &kp RBKT  &trans    &trans
 &trans  &kp BSLH  &kp LPAR  &kp MINUS  &kp RPAR  &kp PLUS                     &kp PRCNT  &kp LBRC  &kp SEMI   &kp RBRC  &kp EXCL  &trans
 &trans  &kp HASH  &kp STAR  &kp COLON  &kp FSLH  &trans     &trans    &trans  &trans     &kp PIPE  &kp TILDE  &kp AMPS  &kp DLLR  &trans
-                                       &trans    &mo 3      &trans    &trans  &trans     &trans
+                                       &trans    &mo 4      &trans    &trans  &trans     &trans
             >;
 
             display-name = "Symbols";
