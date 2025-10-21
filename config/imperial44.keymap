@@ -200,5 +200,16 @@
 
             display-name = "Adjust";
         };
+
+        game {
+            bindings = <
+&trans   &trans  &trans  &kp W   &trans   &kp R                        &trans  &trans  &trans  &trans  &trans  &trans
+&kp ESC  &trans  &kp A   &kp S   &kp D    &kp F                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &trans  &trans  &trans  &trans   &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                 &kp TAB  &kp SPACE  &trans    &trans  &trans  &trans
+            >;
+
+            label = "Game";
+        };
     };
 };
