@@ -190,10 +190,10 @@
         sym_ru {
             display-name = "Symbols RU";
             bindings = <
-&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
-                            &none  &none  &none    &none  &none  &none
+&trans  &none  &kp LEFT_BRACE  &kp PLUS   &kp RIGHT_BRACE  &kp ASTRK                        &none        &kp LESS_THAN     &kp EQUAL  &kp GREATER_THAN   &none     &none
+&none   &none  &kp LPAR        &kp MINUS  &kp RPAR         &pipe_ampersand                  &qmark_excl  &kp LEFT_BRACKET  &kp UNDER  &kp RIGHT_BRACKET  &kp SEMI  &kp SQT
+&none   &none  &kp HASH        &kp PRCNT  &kp DOLLAR       &none            &none    &none  &none        &kp AT_SIGN       &kp CARET  &none              &none     &none
+                                          &none            &none            &none    &none  &none        &none
             >;
         };
 
