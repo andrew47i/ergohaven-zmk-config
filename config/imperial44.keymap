@@ -53,6 +53,24 @@
 
             tapping-term-ms = <200>;
         };
+
+        qmark_excl: qmark_excl {
+            compatible = "zmk,behavior-tap-dance";
+            label = "QMARK_EXCL";
+            #binding-cells = <0>;
+            bindings = <&kp QMARK>, <&kp EXCL>;
+
+            tapping-term-ms = <200>;
+        };
+
+        pipe_ampersand: pipe_ampersand {
+            compatible = "zmk,behavior-tap-dance";
+            label = "PIPE_AMPERSAND";
+            #binding-cells = <0>;
+            bindings = <&kp PIPE>, <&kp AMPERSAND>;
+
+            tapping-term-ms = <200>;
+        };
     };
 
     macros {
@@ -160,10 +178,10 @@
 
         sym_en {
             bindings = <
-&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
-                            &none  &none  &none    &none  &none  &none
+&trans  &none  &kp LEFT_BRACE  &kp PLUS   &kp RIGHT_BRACE  &kp ASTRK                        &none        &kp LESS_THAN     &kp EQUAL  &kp GREATER_THAN   &none     &none
+&none   &none  &kp LPAR        &kp MINUS  &kp RPAR         &pipe_ampersand                  &qmark_excl  &kp LEFT_BRACKET  &kp UNDER  &kp RIGHT_BRACKET  &kp SEMI  &kp SQT
+&none   &none  &kp HASH        &kp PRCNT  &kp DOLLAR       &none            &none    &none  &none        &kp AT_SIGN       &kp CARET  &none              &none     &none
+                                          &none            &none            &none    &none  &none        &none
             >;
 
             display-name = "Symbols EN";
