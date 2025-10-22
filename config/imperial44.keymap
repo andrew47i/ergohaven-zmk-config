@@ -52,11 +52,11 @@
             tapping-term-ms = <200>;
         };
 
-        qmark_excl: qmark_excl {
+        en_qmark_excl: en_qmark_excl {
             compatible = "zmk,behavior-tap-dance";
-            label = "QMARK_EXCL";
+            label = "EN_QMARK_EXCL";
             #binding-cells = <0>;
-            bindings = <&kp QUESTION>, <&kp EXCLAMATION>;
+            bindings = <&kp QMARK>, <&kp EXCL>;
 
             tapping-term-ms = <200>;
         };
@@ -75,6 +75,15 @@
             label = "RU_PIPE_AMPERSAND";
             #binding-cells = <0>;
             bindings = <&en PIPE>, <&en AMPERSAND>;
+
+            tapping-term-ms = <200>;
+        };
+
+        ru_qmark_excl: ru_qmark_excl {
+            compatible = "zmk,behavior-tap-dance";
+            label = "RU_QMARK_EXCL";
+            #binding-cells = <0>;
+            bindings = <&kp RU_QUESTION>, <&kp RU_EXCLAMATION>;
 
             tapping-term-ms = <200>;
         };
@@ -185,10 +194,10 @@
 
         sym_en {
             bindings = <
-&en GRAVE  &none  &kp LEFT_BRACE  &kp PLUS   &kp RIGHT_BRACE  &kp ASTRK                           &none        &kp LESS_THAN     &kp EQUAL  &kp GREATER_THAN   &none     &none
-&none      &none  &kp LPAR        &kp MINUS  &kp RPAR         &en_pipe_ampersand                  &qmark_excl  &kp LEFT_BRACKET  &kp UNDER  &kp RIGHT_BRACKET  &kp SEMI  &kp SQT
-&none      &none  &kp HASH        &kp PRCNT  &kp DOLLAR       &none               &none    &none  &none        &kp AT_SIGN       &kp CARET  &none              &none     &none
-                                             &none            &none               &none    &none  &none        &none
+&en GRAVE  &none  &kp LEFT_BRACE  &kp PLUS   &kp RIGHT_BRACE  &kp ASTRK                           &none           &kp LESS_THAN     &kp EQUAL  &kp GREATER_THAN   &none     &none
+&none      &none  &kp LPAR        &kp MINUS  &kp RPAR         &en_pipe_ampersand                  &en_qmark_excl  &kp LEFT_BRACKET  &kp UNDER  &kp RIGHT_BRACKET  &kp SEMI  &kp SQT
+&none      &none  &kp HASH        &kp PRCNT  &kp DOLLAR       &none               &none    &none  &none           &kp AT_SIGN       &kp CARET  &none              &none     &none
+                                             &none            &none               &none    &none  &none           &none
             >;
 
             display-name = "Symbols EN";
@@ -197,10 +206,10 @@
         sym_ru {
             display-name = "Symbols RU";
             bindings = <
-&kp GRAVE  &none  &en LEFT_BRACE  &kp PLUS   &en RIGHT_BRACE  &kp ASTRK                           &none        &en LESS_THAN     &kp EQUAL  &en GREATER_THAN   &none     &none
-&none      &none  &kp LPAR        &kp MINUS  &kp RPAR         &ru_pipe_ampersand                  &qmark_excl  &en LEFT_BRACKET  &kp UNDER  &en RIGHT_BRACKET  &kp SEMI  &kp SQT
-&none      &none  &en HASH        &kp PRCNT  &en DOLLAR       &none               &none    &none  &none        &en AT_SIGN       &en CARET  &none              &none     &none
-                                             &none            &none               &none    &none  &none        &none
+&kp GRAVE  &none  &en LEFT_BRACE  &kp PLUS   &en RIGHT_BRACE  &kp ASTRK                           &none           &en LESS_THAN     &kp EQUAL  &en GREATER_THAN   &none     &none
+&none      &none  &kp LPAR        &kp MINUS  &kp RPAR         &ru_pipe_ampersand                  &ru_qmark_excl  &en LEFT_BRACKET  &kp UNDER  &en RIGHT_BRACKET  &kp SEMI  &kp SQT
+&none      &none  &en HASH        &kp PRCNT  &en DOLLAR       &none               &none    &none  &none           &en AT_SIGN       &en CARET  &none              &none     &none
+                                             &none            &none               &none    &none  &none           &none
             >;
         };
 
