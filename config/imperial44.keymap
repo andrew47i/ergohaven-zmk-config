@@ -61,6 +61,15 @@
             tapping-term-ms = <200>;
         };
 
+        ru_qmark_excl: ru_qmark_excl {
+            compatible = "zmk,behavior-tap-dance";
+            label = "RU_QMARK_EXCL";
+            #binding-cells = <0>;
+            bindings = <&kp RU_QUESTION>, <&kp RU_EXCLAMATION>;
+
+            tapping-term-ms = <200>;
+        };
+
         en_pipe_ampersand: en_pipe_ampersand {
             compatible = "zmk,behavior-tap-dance";
             label = "EN_PIPE_AMPERSAND";
@@ -79,11 +88,20 @@
             tapping-term-ms = <200>;
         };
 
-        ru_qmark_excl: ru_qmark_excl {
+        en_at_dollar: en_at_dollar {
             compatible = "zmk,behavior-tap-dance";
-            label = "RU_QMARK_EXCL";
+            label = "EN_AT_DOLLAR";
             #binding-cells = <0>;
-            bindings = <&kp RU_QUESTION>, <&kp RU_EXCLAMATION>;
+            bindings = <&kp AT>, <&kp DOLLAR>;
+
+            tapping-term-ms = <200>;
+        };
+
+        ru_at_dollar: en_at_dollar {
+            compatible = "zmk,behavior-tap-dance";
+            label = "RU_AT_DOLLAR";
+            #binding-cells = <0>;
+            bindings = <&en AT>, <&en DOLLAR>;
 
             tapping-term-ms = <200>;
         };
