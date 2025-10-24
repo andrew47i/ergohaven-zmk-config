@@ -97,7 +97,7 @@
             tapping-term-ms = <200>;
         };
 
-        ru_at_dollar: en_at_dollar {
+        ru_at_dollar: ru_at_dollar {
             compatible = "zmk,behavior-tap-dance";
             label = "RU_AT_DOLLAR";
             #binding-cells = <0>;
