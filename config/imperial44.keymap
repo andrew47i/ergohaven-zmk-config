@@ -215,7 +215,7 @@
 &kp GRAVE          &kp ASTRK  &kp LEFT_BRACE  &kp PLUS   &kp RIGHT_BRACE  &kp HASH                                    &en_at_dollar   &kp LESS_THAN     &kp EQUAL  &kp GREATER_THAN   &kp SLASH  &none
 &kp DOUBLE_QUOTES  &kp COLON  &kp LPAR        &kp MINUS  &kp RPAR         &en_pipe_ampersand                          &en_qmark_excl  &kp LEFT_BRACKET  &kp UNDER  &kp RIGHT_BRACKET  &kp SEMI   &kp SQT
 &kp COMMA          &kp N1     &kp N2          &kp N3     &kp N4           &kp N5              &kp CARET    &kp PRCNT  &kp N6          &kp N7            &kp N8     &kp N9             &kp N0     &kp DOT
-                                                         &none            &none               &none        &none      &none           &none
+                                                         &trans           &none               &trans       &trans     &none           &trans
             >;
 
             display-name = "Symbols EN";
@@ -227,7 +227,7 @@
 &en GRAVE             &kp ASTRK     &en LEFT_BRACE  &kp PLUS   &en RIGHT_BRACE  &en HASH                                         &ru_at_dollar   &en LESS_THAN     &kp EQUAL  &en GREATER_THAN   &en RU_SLASH  &none
 &kp RU_DOUBLE_QUOTES  &kp RU_COLON  &kp LPAR        &kp MINUS  &kp RPAR         &ru_pipe_ampersand                               &ru_qmark_excl  &en LEFT_BRACKET  &kp UNDER  &en RIGHT_BRACKET  &kp SEMI      &en SQT
 &kp RU_COMMA          &kp N1        &kp N2          &kp N3     &kp N4           &kp N5              &kp CARET    &en RU_PERCENT  &kp N6          &kp N7            &kp N8     &kp N9             &kp N0        &kp RU_DOT
-                                                               &none            &none               &none        &none           &none           &none
+                                                               &trans           &none               &trans       &trans          &none           &trans
             >;
         };
 
