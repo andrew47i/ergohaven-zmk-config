@@ -186,7 +186,7 @@
             bindings = <
 &kp GRAVE  &kp Q         &kp W        &kp E        &kp R         &kp T                                &kp Y            &kp U         &kp I        &kp O        &kp P            &none
 &kp ESC    &hml LCTRL A  &hml LALT S  &hml LGUI D  &hml LSHFT F  &kp G                                &kp H            &hmr LSHFT J  &hmr LGUI K  &hmr LALT L  &hmr LCTRL SEMI  &kp SINGLE_QUOTE
-&none      &kp Z         &kp X        &kp C        &kp V         &kp B        &none        &none      &kp N            &kp M         &kp COMMA    &kp DOT      &kp SLASH        &kp BACKSLASH
+&mo 7      &kp Z         &kp X        &kp C        &kp V         &kp B        &none        &none      &kp N            &kp M         &kp COMMA    &kp DOT      &kp SLASH        &kp BACKSLASH
                                                    &lt 4 TAB     &lt 2 SPACE  &kp ENTER    &kp ENTER  &lt 2 BACKSPACE  &lt 4 DEL
             >;
 
@@ -201,7 +201,7 @@
             bindings = <
 &none    &kp RU_CYRILLIC_SHORT_I    &kp RU_CYRILLIC_TSE         &kp RU_CYRILLIC_U         &kp RU_CYRILLIC_KA        &ie_io                                      &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE       &kp RU_CYRILLIC_SHA       &kp RU_CYRILLIC_SHCHA     &kp RU_CYRILLIC_ZE          &kp RU_CYRILLIC_HA
 &kp ESC  &hml LCTRL RU_CYRILLIC_EF  &hml LALT RU_CYRILLIC_YERU  &hml LGUI RU_CYRILLIC_VE  &hml LSHFT RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                          &kp RU_CYRILLIC_ER  &hmr LSHFT RU_CYRILLIC_O  &hmr LGUI RU_CYRILLIC_EL  &hmr LALT RU_CYRILLIC_DE  &hmr LCTRL RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
-&none    &kp RU_CYRILLIC_YA         &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES        &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I   &none        &none      &kp RU_CYRILLIC_TE  &soft_sign_soft_hard      &kp RU_CYRILLIC_BE        &kp RU_CYRILLIC_YU        &kp SLASH                   &kp BACKSLASH
+&mo 7    &kp RU_CYRILLIC_YA         &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES        &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I   &none        &none      &kp RU_CYRILLIC_TE  &soft_sign_soft_hard      &kp RU_CYRILLIC_BE        &kp RU_CYRILLIC_YU        &kp SLASH                   &kp BACKSLASH
                                                                                           &lt 4 TAB                 &lt 3 SPACE         &kp ENTER    &kp ENTER  &lt 3 BACKSPACE     &lt 4 DELETE
             >;
 
@@ -255,13 +255,24 @@
 
         game {
             bindings = <
-&none    &none  &none  &kp W  &none    &kp R                      &none  &none  &none  &none  &none  &none
-&kp ESC  &none  &kp A  &kp S  &kp D    &kp F                      &none  &none  &none  &none  &none  &none
-&none    &none  &none  &none  &none    &none      &none    &none  &none  &none  &none  &none  &none  &none
-                              &kp TAB  &kp SPACE  &none    &none  &none  &none
+&none    &kp N1          &kp N2  &kp W  &kp NUMBER_3  &kp R                      &none  &none  &none  &none  &none  &none
+&kp ESC  &kp LEFT_SHIFT  &kp A   &kp S  &kp D         &kp F                      &none  &none  &none  &none  &none  &none
+&mo 7    &none           &kp X   &kp C  &kp V         &kp U      &kp Y    &none  &none  &none  &none  &none  &none  &none
+                                        &kp TAB       &kp SPACE  &none    &none  &none  &none
             >;
 
             label = "Game";
+        };
+
+        System {
+            bindings = <
+&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &tog 6
+&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+                            &none  &none  &none    &none  &none  &none
+            >;
+
+            label = "System";
         };
     };
 };
