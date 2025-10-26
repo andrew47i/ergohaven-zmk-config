@@ -224,8 +224,8 @@
         sym_ru {
             display-name = "Symbols RU";
             bindings = <
-&en GRAVE             &kp ASTRK     &en LEFT_BRACE  &kp PLUS   &en RIGHT_BRACE  &en HASH                                         &ru_at_dollar   &en LESS_THAN     &kp EQUAL  &en GREATER_THAN   &en RU_SLASH  &none
-&kp RU_DOUBLE_QUOTES  &kp RU_COLON  &kp LPAR        &kp MINUS  &kp RPAR         &ru_pipe_ampersand                               &ru_qmark_excl  &en LEFT_BRACKET  &kp UNDER  &en RIGHT_BRACKET  &kp SEMI      &en SQT
+&en GRAVE             &kp ASTRK     &en LEFT_BRACE  &kp PLUS   &en RIGHT_BRACE  &en HASH                                         &ru_at_dollar   &en LESS_THAN     &kp EQUAL  &en GREATER_THAN   &kp RU_SLASH  &none
+&kp RU_DOUBLE_QUOTES  &kp RU_COLON  &kp LPAR        &kp MINUS  &kp RPAR         &ru_pipe_ampersand                               &ru_qmark_excl  &en LEFT_BRACKET  &kp UNDER  &en RIGHT_BRACKET  &kp RU_SEMI   &en SQT
 &kp RU_COMMA          &kp N1        &kp N2          &kp N3     &kp N4           &kp N5              &kp CARET    &en RU_PERCENT  &kp N6          &kp N7            &kp N8     &kp N9             &kp N0        &kp RU_DOT
                                                                &trans           &none               &trans       &trans          &none           &trans
             >;
