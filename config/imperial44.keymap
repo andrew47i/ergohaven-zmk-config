@@ -40,7 +40,7 @@
             #binding-cells = <0>;
             bindings = <&kp RU_CYRILLIC_IE>, <&kp RU_CYRILLIC_IO>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <175>;
         };
 
         soft_sign_soft_hard: soft_sign_soft_hard {
@@ -200,13 +200,13 @@
 
         switch_to_en {
             bindings = <&layer_en>;
-            key-positions = <16 15>;
+            key-positions = <27 28>;
             layers = <1>;
         };
 
         switch_to_ru {
             bindings = <&layer_ru>;
-            key-positions = <19 20>;
+            key-positions = <33 34>;
             layers = <0>;
         };
     };
@@ -218,7 +218,7 @@
             bindings = <
 &kp GRAVE  &kp Q         &kp W        &kp E        &kp R         &kp T                                &kp Y            &kp U         &kp I        &kp O        &kp P            &none
 &kp ESC    &hml LCTRL A  &hml LALT S  &hml LGUI D  &hml LSHFT F  &kp G                                &kp H            &hmr LSHFT J  &hmr LGUI K  &hmr LALT L  &hmr LCTRL SEMI  &kp SINGLE_QUOTE
-&mo 6      &kp Z         &kp X        &kp C        &kp V         &kp B        &none        &none      &kp N            &kp M         &kp COMMA    &kp DOT      &kp SLASH        &kp BACKSLASH
+&mo 7      &kp Z         &kp X        &kp C        &kp V         &kp B        &none        &none      &kp N            &kp M         &kp COMMA    &kp DOT      &kp SLASH        &kp BACKSLASH
                                                    &lt 4 TAB     &lt 2 SPACE  &kp ENTER    &kp ENTER  &lt 2 BACKSPACE  &lt 4 DEL
             >;
 
@@ -233,7 +233,7 @@
             bindings = <
 &none    &kp RU_CYRILLIC_SHORT_I    &kp RU_CYRILLIC_TSE         &kp RU_CYRILLIC_U         &kp RU_CYRILLIC_KA        &ie_io                                      &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE       &kp RU_CYRILLIC_SHA       &kp RU_CYRILLIC_SHCHA     &kp RU_CYRILLIC_ZE          &kp RU_CYRILLIC_HA
 &kp ESC  &hml LCTRL RU_CYRILLIC_EF  &hml LALT RU_CYRILLIC_YERU  &hml LGUI RU_CYRILLIC_VE  &hml LSHFT RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                          &kp RU_CYRILLIC_ER  &hmr LSHFT RU_CYRILLIC_O  &hmr LGUI RU_CYRILLIC_EL  &hmr LALT RU_CYRILLIC_DE  &hmr LCTRL RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
-&mo 6    &kp RU_CYRILLIC_YA         &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES        &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I   &none        &none      &kp RU_CYRILLIC_TE  &soft_sign_soft_hard      &kp RU_CYRILLIC_BE        &kp RU_CYRILLIC_YU        &kp SLASH                   &kp BACKSLASH
+&mo 7    &kp RU_CYRILLIC_YA         &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES        &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I   &none        &none      &kp RU_CYRILLIC_TE  &soft_sign_soft_hard      &kp RU_CYRILLIC_BE        &kp RU_CYRILLIC_YU        &kp SLASH                   &kp BACKSLASH
                                                                                           &lt 4 TAB                 &lt 3 SPACE         &kp ENTER    &kp ENTER  &lt 3 BACKSPACE     &lt 4 DELETE
             >;
 
@@ -247,7 +247,7 @@
 &kp GRAVE          &kp ASTRK  &kp LEFT_BRACE  &kp PLUS   &kp RIGHT_BRACE  &kp HASH                                    &en_at_dollar   &kp LESS_THAN     &kp EQUAL  &kp GREATER_THAN   &kp SLASH  &none
 &kp DOUBLE_QUOTES  &kp COLON  &kp LPAR        &kp MINUS  &kp RPAR         &en_pipe_ampersand                          &en_qmark_excl  &kp LEFT_BRACKET  &kp UNDER  &kp RIGHT_BRACKET  &kp SEMI   &kp SQT
 &kp COMMA          &kp N1     &kp N2          &kp N3     &kp N4           &kp N5              &kp CARET    &kp PRCNT  &kp N6          &kp N7            &kp N8     &kp N9             &kp N0     &kp DOT
-                                                         &trans           &none               &trans       &trans     &none           &trans
+                                                         &trans           &mo 5               &trans       &trans     &mo 5           &trans
             >;
 
             display-name = "Symbols EN";
@@ -274,11 +274,20 @@
             display-name = "Navigation";
         };
 
+        F_layer {
+            bindings = <
+&none  &none             &none         &none         &none           &none                  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&none  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &none                  &kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6
+&none  &none             &none         &none         &none           &none  &none    &none  &none   &none   &none   &none    &none    &none
+                                                     &none           &none  &none    &none  &none   &none
+            >;
+        };
+
         game {
             bindings = <
 &kp T    &kp N1          &kp N2  &kp W  &kp NUMBER_3  &kp R                              &kp N4  &kp N5          &kp N6          &kp N7        &kp N8           &none
 &kp ESC  &kp LEFT_SHIFT  &kp A   &kp S  &kp D         &kp F                              &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none
-&mo 6    &kp LCTRL       &kp X   &kp C  &kp V         &kp U      &kp Y        &none      &kp N   &kp M           &kp I           &kp O         &none            &none
+&mo 7    &kp LCTRL       &kp X   &kp C  &kp V         &kp U      &kp Y        &none      &kp N   &kp M           &kp I           &kp O         &none            &none
                                         &kp TAB       &kp SPACE  &kp ENTER    &kp ENTER  &none   &none
             >;
 
@@ -288,7 +297,7 @@
         System {
             label = "System";
             bindings = <
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3          &bt BT_SEL 4                                    &none               &kp C_VOLUME_DOWN  &kp K_MUTE        &kp C_VOLUME_UP  &none  &tog 5
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3          &bt BT_SEL 4                                    &none               &kp C_VOLUME_DOWN  &kp K_MUTE        &kp C_VOLUME_UP  &none  &tog 6
 &none  &none         &none         &none         &kp LS(LG(NUMBER_5))  &none                                           &none               &kp LG(PLUS)       &kp LG(MINUS)     &kp LG(N0)       &none  &none
 &none  &none         &none         &none         &none                 &none         &none         &none               &none               &kp C_PREV         &kp C_PLAY_PAUSE  &kp C_NEXT       &none  &none
                                                  &out OUT_BLE          &out OUT_USB  &bt BT_CLR    &kp LC(LS(LA(N0)))  &kp LS(LA(LC(N1)))  &none
