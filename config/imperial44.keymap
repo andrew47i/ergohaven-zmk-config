@@ -240,10 +240,10 @@
         base_ru {
             display-name = "RU";
             bindings = <
-&none    &kp RU_CYRILLIC_SHORT_I     &kp RU_CYRILLIC_TSE          &kp RU_CYRILLIC_U          &kp RU_CYRILLIC_KA         &morph_ie_io                                &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA        &kp RU_CYRILLIC_SHCHA      &kp RU_CYRILLIC_ZE           &kp RU_CYRILLIC_HA
-&kp ESC  &hrml LCTRL RU_CYRILLIC_EF  &hrml LALT RU_CYRILLIC_YERU  &hrml LGUI RU_CYRILLIC_VE  &hrml LSHFT RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                          &kp RU_CYRILLIC_ER  &hrmr LSHFT RU_CYRILLIC_O  &hrmr LGUI RU_CYRILLIC_EL  &hrmr LALT RU_CYRILLIC_DE  &hrmr LCTRL RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
-&mo 7    &kp RU_CYRILLIC_YA          &kp RU_CYRILLIC_CHE          &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM         &kp RU_CYRILLIC_I   &none        &none      &kp RU_CYRILLIC_TE  &soft_sign_hard            &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU         &kp SLASH                    &kp BACKSLASH
-                                                                                             &lt 4 TAB                  &lt 3 SPACE         &kp ENTER    &kp ENTER  &lt 3 BACKSPACE     &lt 4 DELETE
+&kp RU_CYRILLIC_IO  &kp RU_CYRILLIC_SHORT_I     &kp RU_CYRILLIC_TSE          &kp RU_CYRILLIC_U          &kp RU_CYRILLIC_KA         &kp RU_CYRILLIC_IE                          &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA        &kp RU_CYRILLIC_SHCHA      &kp RU_CYRILLIC_ZE           &kp RU_CYRILLIC_HA
+&kp ESC             &hrml LCTRL RU_CYRILLIC_EF  &hrml LALT RU_CYRILLIC_YERU  &hrml LGUI RU_CYRILLIC_VE  &hrml LSHFT RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                          &kp RU_CYRILLIC_ER  &hrmr LSHFT RU_CYRILLIC_O  &hrmr LGUI RU_CYRILLIC_EL  &hrmr LALT RU_CYRILLIC_DE  &hrmr LCTRL RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
+&mo 7               &kp RU_CYRILLIC_YA          &kp RU_CYRILLIC_CHE          &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM         &kp RU_CYRILLIC_I   &none        &none      &kp RU_CYRILLIC_TE  &soft_sign_hard            &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU         &kp SLASH                    &kp BACKSLASH
+                                                                                                        &lt 4 TAB                  &lt 3 SPACE         &kp ENTER    &kp ENTER  &lt 3 BACKSPACE     &lt 4 DELETE
             >;
 
             sensor-bindings =
