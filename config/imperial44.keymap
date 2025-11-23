@@ -112,7 +112,7 @@
             bindings = <&kp RU_CYRILLIC_IE>, <&kp RU_CYRILLIC_IO>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RCTL|MOD_RALT)>;
+            mods = <(MOD_RCTL|MOD_RGUI)>;
         };
     };
 
