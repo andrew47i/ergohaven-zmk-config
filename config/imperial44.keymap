@@ -70,6 +70,24 @@
             tapping-term-ms = <200>;
         };
 
+        mrh_en_qmark_excl: mrh_en_qmark_excl {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MRH_EN_QMARK_EXCL";
+            bindings = <&kp QMARK>, <&kp EXCL>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RGUI|MOD_LGUI)>;
+        };
+
+        mrh_ru_qmark_excl: mrh_ru_qmark_excl {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MRH_RU_QMARK_EXCL";
+            bindings = <&kp RU_QUESTION>, <&kp RU_EXCLAMATION>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RGUI|MOD_LGUI)>;
+        };
+
         en_pipe_ampersand: en_pipe_ampersand {
             compatible = "zmk,behavior-tap-dance";
             label = "EN_PIPE_AMPERSAND";
@@ -86,6 +104,24 @@
             bindings = <&en PIPE>, <&en AMPERSAND>;
 
             tapping-term-ms = <200>;
+        };
+
+        mrh_en_pipe_ampersand: mrh_en_pipe_ampersand {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MRH_EN_PIPE_AMPERSAND";
+            bindings = <&kp PIPE>, <&kp AMPERSAND>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RGUI|MOD_LGUI)>;
+        };
+
+        mrh_ru_pipe_ampersand: mrh_ru_pipe_ampersand {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MRH_RU_PIPE_AMPERSAND";
+            bindings = <&en PIPE>, <&en AMPERSAND>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RGUI|MOD_LGUI)>;
         };
 
         en_at_dollar: en_at_dollar {
