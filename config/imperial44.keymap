@@ -298,10 +298,10 @@
 
         sym_en {
             bindings = <
-&kp GRAVE          &kp ASTRK  &kp LEFT_BRACE  &kp PLUS          &kp RIGHT_BRACE  &kp HASH                             &mrh_en_at_dlr      &kp LESS_THAN     &kp EQUAL         &kp GREATER_THAN   &kp SLASH  &kp CARET
-&kp DOUBLE_QUOTES  &kp COLON  &kp LPAR        &hrml LCMD MINUS  &kp RPAR         &mrh_en_at_dlr                       &mrh_en_qmark_excl  &kp LEFT_BRACKET  &hrmr RCMD UNDER  &kp RIGHT_BRACKET  &kp SEMI   &kp SQT
-&kp COMMA          &kp N1     &kp N2          &kp N3            &kp N4           &kp N5          &none     &kp PRCNT  &kp N6              &kp N7            &kp N8            &kp N9             &kp N0     &kp DOT
-                                                                &trans           &mo 5           &trans    &trans     &mo 5               &trans
+&kp GRAVE          &kp ASTRK  &kp LEFT_BRACE  &kp PLUS          &kp RIGHT_BRACE  &kp HASH                                     &mrh_en_at_dlr      &kp LESS_THAN     &kp EQUAL         &kp GREATER_THAN   &kp SLASH  &kp CARET
+&kp DOUBLE_QUOTES  &kp COLON  &kp LPAR        &hrml LCMD MINUS  &kp RPAR         &mrh_en_pipe_ampersand                       &mrh_en_qmark_excl  &kp LEFT_BRACKET  &hrmr RCMD UNDER  &kp RIGHT_BRACKET  &kp SEMI   &kp SQT
+&kp COMMA          &kp N1     &kp N2          &kp N3            &kp N4           &kp N5                  &none     &kp PRCNT  &kp N6              &kp N7            &kp N8            &kp N9             &kp N0     &kp DOT
+                                                                &trans           &mo 5                   &trans    &trans     &mo 5               &trans
             >;
 
             display-name = "Symbols EN";
