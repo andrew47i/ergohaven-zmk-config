@@ -325,7 +325,7 @@
                                                &none          &mcr_back   &mcr_forward    &mcr_back  &mcr_forward  &none
             >;
 
-            display-name = "Navigation";
+            display-name = "Nav";
         };
 
         F_layer {
