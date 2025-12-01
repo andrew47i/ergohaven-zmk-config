@@ -296,7 +296,7 @@
                 <&inc_dec_kp PG_UP PG_DN>;
         };
 
-        sym_en {
+        symb_en {
             bindings = <
 &kp GRAVE          &kp ASTRK  &kp LEFT_BRACE  &kp PLUS          &kp RIGHT_BRACE  &kp HASH                                     &mrh_en_at_dlr      &kp LESS_THAN     &kp EQUAL         &kp GREATER_THAN   &kp SLASH  &kp CARET
 &kp DOUBLE_QUOTES  &kp COLON  &kp LPAR        &hrml LCMD MINUS  &kp RPAR         &mrh_en_pipe_ampersand                       &mrh_en_qmark_excl  &kp LEFT_BRACKET  &hrmr RCMD UNDER  &kp RIGHT_BRACKET  &kp SEMI   &kp SQT
@@ -304,11 +304,11 @@
                                                                 &trans           &mo 5                   &trans    &trans     &mo 5               &trans
             >;
 
-            display-name = "Symbols EN";
+            display-name = "Symb EN";
         };
 
-        sym_ru {
-            display-name = "Symbols RU";
+        symb_ru {
+            display-name = "Symb RU";
             bindings = <
 &en GRAVE             &kp ASTRK     &en LEFT_BRACE  &kp PLUS          &en RIGHT_BRACE  &en HASH                                          &mrh_ru_at_dlr      &en LESS_THAN     &kp EQUAL         &en GREATER_THAN   &kp RU_SLASH  &kp CARET
 &kp RU_DOUBLE_QUOTES  &kp RU_COLON  &kp LPAR        &hrml LCMD MINUS  &kp RPAR         &mrh_ru_pipe_ampersand                            &mrh_ru_qmark_excl  &en LEFT_BRACKET  &hrmr RCMD UNDER  &en RIGHT_BRACKET  &kp RU_SEMI   &en SQT
@@ -352,9 +352,9 @@
 
         System {
             bindings = <
-&studio_unlock  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3          &bt BT_SEL 4                                     &none               &kp C_VOLUME_DOWN  &kp K_MUTE        &kp C_VOLUME_UP  &none  &tog 6
-&none           &none         &none         &none         &kp LS(LG(NUMBER_5))  &none                                            &none               &kp LG(PLUS)       &kp LG(MINUS)     &kp LG(N0)       &none  &none
-&none           &none         &none         &none         &none                 &none         &bootloader    &bootloader         &none               &kp C_PREV         &kp C_PLAY_PAUSE  &kp C_NEXT       &none  &none
+&studio_unlock  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3          &bt BT_SEL 4                                     &none               &kp C_VOLUME_DOWN  &kp K_MUTE        &kp C_VOLUME_UP  &none    &tog 6
+&none           &none         &none         &none         &kp LS(LG(NUMBER_5))  &none                                            &none               &kp LG(MINUS)      &kp LG(N0)        &kp LG(PLUS)     &none    &none
+&none           &none         &none         &none         &none                 &none         &bootloader    &bootloader         &none               &kp C_PREV         &kp C_PLAY_PAUSE  &kp C_NEXT       &kp F23  &kp F24
                                                           &out OUT_BLE          &out OUT_USB  &bt BT_CLR     &kp LS(LA(LG(N0)))  &kp LS(LA(LG(N1)))  &none
             >;
 
