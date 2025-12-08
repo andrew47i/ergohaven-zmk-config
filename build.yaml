@@ -119,7 +119,7 @@ include:
   - board: ergohaven
     shield: imperial44_qube qube dongle_screen
     snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    cmake-args: -DCONFIG_ZMK_STUDIO=y DONGLE_SCREEN_IDLE_TIMEOUT_S=0
     artifact-name: imperial44_qube-ergohaven-zmk
 #  - board: ergohaven
 #    shield: imperial44_qube qube dongle_screen
