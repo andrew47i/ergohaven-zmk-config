@@ -263,6 +263,11 @@
             key-positions = <33 34>;
             layers = <0>;
         };
+
+        capsword {
+            bindings = <&caps_word>;
+            key-positions = <16 19>;
+        };
     };
 
     keymap {
