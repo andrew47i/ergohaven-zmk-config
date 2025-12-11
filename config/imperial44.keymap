@@ -268,6 +268,24 @@
             bindings = <&caps_word>;
             key-positions = <16 19>;
         };
+
+        en_qmark {
+            bindings = <&kp QMARK>;
+            key-positions = <7 8>;
+            layers = <0>;
+        };
+
+        ru_qmark {
+            bindings = <&kp RU_QUESTION>;
+            key-positions = <7 8>;
+            layers = <1>;
+        };
+
+        excl {
+            bindings = <&kp EXCL>;
+            key-positions = <4 3>;
+            layers = <0 1>;
+        };
     };
 
     keymap {
