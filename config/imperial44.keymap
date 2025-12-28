@@ -359,10 +359,10 @@
 
         symb_en {
             bindings = <
-&kp GRAVE          &kp ASTRK  &kp LEFT_BRACE  &kp PLUS          &kp RIGHT_BRACE  &kp HASH                                            &mrh_en_at_dlr  &kp LESS_THAN     &kp EQUAL         &kp GREATER_THAN   &kp SLASH  &kp CARET
-&kp DOUBLE_QUOTES  &kp COLON  &kp LPAR        &hrml LCMD MINUS  &kp RPAR         &mrh_en_pipe_ampersand                              &none           &kp LEFT_BRACKET  &hrmr RCMD UNDER  &kp RIGHT_BRACKET  &kp SEMI   &kp SQT
-&kp COMMA          &kp N1     &kp N2          &kp N3            &kp N4           &kp N5                  &kp RU_NUMERO    &kp PRCNT  &kp N6          &kp N7            &kp N8            &kp N9             &kp N0     &kp DOT
-                                                                &trans           &mo 5                   &trans           &trans     &mo 5           &trans
+&kp GRAVE          &kp ASTRK  &kp LEFT_BRACE  &kp PLUS          &kp RIGHT_BRACE   &kp HASH                                            &mrh_en_at_dlr  &kp LESS_THAN     &kp EQUAL         &kp GREATER_THAN   &kp SLASH  &kp CARET
+&kp DOUBLE_QUOTES  &kp COLON  &kp LPAR        &hrml LCMD MINUS  &hrml LSHFT RPAR  &mrh_en_pipe_ampersand                              &none           &kp LEFT_BRACKET  &hrmr RCMD UNDER  &kp RIGHT_BRACKET  &kp SEMI   &kp SQT
+&kp COMMA          &kp N1     &kp N2          &kp N3            &kp N4            &kp N5                  &kp RU_NUMERO    &kp PRCNT  &kp N6          &kp N7            &kp N8            &kp N9             &kp N0     &kp DOT
+                                                                &trans            &mo 5                   &trans           &trans     &mo 5           &trans
             >;
 
             display-name = "Symb EN";
@@ -371,9 +371,9 @@
         symb_ru {
             display-name = "Symb RU";
             bindings = <
-&en GRAVE             &kp ASTRK     &en LEFT_BRACE  &kp PLUS          &en RIGHT_BRACE  &en HASH                                                 &mrh_ru_at_dlr  &en LESS_THAN     &kp EQUAL         &en GREATER_THAN   &kp RU_SLASH  &kp CARET
-&kp RU_DOUBLE_QUOTES  &kp RU_COLON  &kp LPAR        &hrml LCMD MINUS  &kp RPAR         &mrh_ru_pipe_ampersand                                   &none           &en LEFT_BRACKET  &hrmr RCMD UNDER  &en RIGHT_BRACKET  &kp RU_SEMI   &en SQT
-&kp RU_COMMA          &kp N1        &kp N2          &kp N3            &kp N4           &kp N5                  &kp RU_NUMERO    &en RU_PERCENT  &kp N6          &kp N7            &kp N8            &kp N9             &kp N0        &kp RU_DOT
+&en GRAVE             &trans        &en LEFT_BRACE  &trans            &en RIGHT_BRACE  &en HASH                                                 &mrh_ru_at_dlr  &en LESS_THAN     &trans            &en GREATER_THAN   &kp RU_SLASH  &trans
+&kp RU_DOUBLE_QUOTES  &kp RU_COLON  &trans          &hrml LCMD MINUS  &trans           &mrh_ru_pipe_ampersand                                   &none           &en LEFT_BRACKET  &hrmr RCMD UNDER  &en RIGHT_BRACKET  &kp RU_SEMI   &en SQT
+&kp RU_COMMA          &trans        &trans          &trans            &trans           &trans                  &kp RU_NUMERO    &en RU_PERCENT  &trans          &trans            &trans            &trans             &trans        &kp RU_DOT
                                                                       &trans           &mo 5                   &trans           &trans          &mo 5           &trans
             >;
         };
