@@ -331,10 +331,10 @@
 
         base_en {
             bindings = <
-&kp GRAVE  &kp Q          &kp W         &kp E         &kp R          &kp T                                    &kp Y            &kp U          &kp I         &kp O         &kp P             &none
-&kp ESC    &hrml LCTRL A  &hrml LALT S  &hrml LGUI D  &hrml LSHFT F  &kp G                                    &kp H            &hrmr RSHFT J  &hrmr RGUI K  &hrmr RALT L  &hrmr RCTRL SEMI  &kp SINGLE_QUOTE
-&none      &kp Z          &kp X         &kp C         &kp V          &kp B        &none          &none        &kp N            &kp M          &kp COMMA     &kp DOT       &kp SLASH         &kp BACKSLASH
-                                                      &lt 4 TAB      &lt 2 SPACE  &lt 8 ENTER    &lt 8 ENTER  &lt 2 BACKSPACE  &lt 4 DEL
+&kp GRAVE  &kp Q          &kp W         &kp E         &kp R        &kp T                                    &kp Y            &kp U        &kp I         &kp O         &kp P             &none
+&kp ESC    &hrml LCTRL A  &hrml LALT S  &hrml LGUI D  &mt LSHFT F  &kp G                                    &kp H            &mt RSHFT J  &hrmr RGUI K  &hrmr RALT L  &hrmr RCTRL SEMI  &kp SINGLE_QUOTE
+&none      &kp Z          &kp X         &kp C         &kp V        &kp B        &none          &none        &kp N            &kp M        &kp COMMA     &kp DOT       &kp SLASH         &kp BACKSLASH
+                                                      &lt 4 TAB    &lt 2 SPACE  &lt 8 ENTER    &lt 8 ENTER  &lt 2 BACKSPACE  &lt 4 DEL
             >;
 
             display-name = "EN";
@@ -343,10 +343,10 @@
         base_ru {
             display-name = "RU";
             bindings = <
-&kp RU_CYRILLIC_IO  &kp RU_CYRILLIC_SHORT_I     &kp RU_CYRILLIC_TSE          &kp RU_CYRILLIC_U          &kp RU_CYRILLIC_KA         &kp RU_CYRILLIC_IE                    &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA        &kp RU_CYRILLIC_SHCHA      &kp RU_CYRILLIC_ZE           &kp RU_CYRILLIC_HA
-&kp ESC             &hrml LCTRL RU_CYRILLIC_EF  &hrml LALT RU_CYRILLIC_YERU  &hrml LGUI RU_CYRILLIC_VE  &hrml LSHFT RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                    &kp RU_CYRILLIC_ER  &hrmr LSHFT RU_CYRILLIC_O  &hrmr LGUI RU_CYRILLIC_EL  &hrmr LALT RU_CYRILLIC_DE  &hrmr LCTRL RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
-&none               &kp RU_CYRILLIC_YA          &kp RU_CYRILLIC_CHE          &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM         &kp RU_CYRILLIC_I   &none     &none   &kp RU_CYRILLIC_TE  &soft_sign_hard            &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU         &kp SLASH                    &kp BACKSLASH
-                                                                                                        &lt 4 TAB                  &lt 3 SPACE         &trans    &trans  &lt 3 BACKSPACE     &lt 4 DELETE
+&kp RU_CYRILLIC_IO  &kp RU_CYRILLIC_SHORT_I     &kp RU_CYRILLIC_TSE          &kp RU_CYRILLIC_U          &kp RU_CYRILLIC_KA       &kp RU_CYRILLIC_IE                    &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE      &kp RU_CYRILLIC_SHA        &kp RU_CYRILLIC_SHCHA      &kp RU_CYRILLIC_ZE           &kp RU_CYRILLIC_HA
+&kp ESC             &hrml LCTRL RU_CYRILLIC_EF  &hrml LALT RU_CYRILLIC_YERU  &hrml LGUI RU_CYRILLIC_VE  &mt LSHFT RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                    &kp RU_CYRILLIC_ER  &mt LSHFT RU_CYRILLIC_O  &hrmr LGUI RU_CYRILLIC_EL  &hrmr LALT RU_CYRILLIC_DE  &hrmr LCTRL RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
+&none               &kp RU_CYRILLIC_YA          &kp RU_CYRILLIC_CHE          &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM       &kp RU_CYRILLIC_I   &none     &none   &kp RU_CYRILLIC_TE  &soft_sign_hard          &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU         &kp SLASH                    &kp BACKSLASH
+                                                                                                        &lt 4 TAB                &lt 3 SPACE         &trans    &trans  &lt 3 BACKSPACE     &lt 4 DELETE
             >;
         };
 
@@ -364,10 +364,10 @@
         symb_ru {
             display-name = "Symb RU";
             bindings = <
-&en GRAVE             &kp ASTRK     &en LEFT_BRACE  &kp PLUS          &en RIGHT_BRACE   &en HASH                                                 &mrh_ru_at_dlr  &en LESS_THAN     &kp EQUAL         &en GREATER_THAN   &kp RU_SLASH  &kp CARET
-&kp RU_DOUBLE_QUOTES  &kp RU_COLON  &kp LPAR        &hrml LCMD MINUS  &hrml LSHFT RPAR  &mrh_ru_pipe_ampersand                                   &none           &en LEFT_BRACKET  &hrmr RCMD UNDER  &en RIGHT_BRACKET  &kp RU_SEMI   &en SQT
-&kp RU_COMMA          &kp N1        &kp N2          &kp N3            &kp N4            &kp N5                  &kp RU_NUMERO    &en RU_PERCENT  &kp N6          &kp N7            &kp N8            &kp N9             &kp N0        &kp RU_DOT
-                                                                      &trans            &mo 5                   &trans           &trans          &mo 5           &trans
+&en GRAVE             &kp ASTRK     &en LEFT_BRACE  &kp PLUS        &en RIGHT_BRACE  &en HASH                                                 &mrh_ru_at_dlr  &en LESS_THAN     &kp EQUAL       &en GREATER_THAN   &kp RU_SLASH  &kp CARET
+&kp RU_DOUBLE_QUOTES  &kp RU_COLON  &kp LPAR        &mt LCMD MINUS  &mt LSHFT RPAR   &mrh_ru_pipe_ampersand                                   &none           &en LEFT_BRACKET  &mt RCMD UNDER  &en RIGHT_BRACKET  &kp RU_SEMI   &en SQT
+&kp RU_COMMA          &kp N1        &kp N2          &kp N3          &kp N4           &kp N5                  &kp RU_NUMERO    &en RU_PERCENT  &kp N6          &kp N7            &kp N8          &kp N9             &kp N0        &kp RU_DOT
+                                                                    &trans           &mo 5                   &trans           &trans          &mo 5           &trans
             >;
         };
 
