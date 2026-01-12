@@ -321,7 +321,25 @@
 
         ru_comma {
             bindings = <&kp RU_COMMA>;
-            key-positions = <36 35>;
+            key-positions = <26 27>;
+            layers = <1>;
+        };
+
+        en_comma {
+            bindings = <&kp COMMA>;
+            key-positions = <26 27>;
+            layers = <0>;
+        };
+
+        en_dot {
+            bindings = <&kp DOT>;
+            key-positions = <34 35>;
+            layers = <0>;
+        };
+
+        ru_dot {
+            bindings = <&kp RU_DOT>;
+            key-positions = <34 35>;
             layers = <1>;
         };
     };
@@ -384,10 +402,10 @@
 
         F_layer {
             bindings = <
-&none  &kp N1            &kp N2        &kp N3        &kp N4          &kp N5                  &kp N6   &kp N7                &kp N8            &kp N9              &kp N0                   &none
-&none  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &kp F11                 &kp F12  &mt RIGHT_SHIFT LEFT  &mt RIGHT_GUI UP  &mt RIGHT_ALT DOWN  &mt RIGHT_CONTROL RIGHT  &none
-&none  &kp F1            &kp F2        &kp F3        &kp F4          &kp F5  &none    &none  &kp F6   &kp F7                &kp F8            &kp F9              &kp F10                  &none
-                                                     &none           &none   &none    &none  &none    &none
+&none  &kp N1            &kp N2        &kp N3        &kp N4          &kp N5                   &kp N6   &kp N7                &kp N8            &kp N9              &kp N0                   &none
+&none  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &kp F11                  &kp F12  &mt RIGHT_SHIFT LEFT  &mt RIGHT_GUI UP  &mt RIGHT_ALT DOWN  &mt RIGHT_CONTROL RIGHT  &none
+&none  &kp F1            &kp F2        &kp F3        &kp F4          &kp F5   &none    &none  &kp F6   &kp F7                &kp F8            &kp F9              &kp F10                  &none
+                                                     &none           &none    &none    &none  &none    &none
             >;
 
             label = "F_layer";
