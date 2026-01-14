@@ -453,5 +453,16 @@
 
             label = "Num";
         };
+
+        alt_symb {
+            bindings = <
+&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+                            &none  &none  &none    &none  &none  &none
+            >;
+
+            label = "alt_symb";
+        };
     };
 };
