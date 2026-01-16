@@ -388,11 +388,11 @@
         ru_dollar {
             bindings = <&en DOLLAR>;
             key-positions = <3 14>;
-            layers = <0>;
+            layers = <1>;
         };
 
         equal {
-            bindings = <&en EQUAL>;
+            bindings = <&kp EQUAL>;
             key-positions = <21 20>;
             layers = <0 1>;
         };
