@@ -348,6 +348,84 @@
             key-positions = <18 19>;
             layers = <1>;
         };
+
+        en_at {
+            bindings = <&kp AT>;
+            key-positions = <>;
+            layers = <0>;
+        };
+
+        ru_at {
+            bindings = <&en AT>;
+            key-positions = <>;
+            layers = <1>;
+        };
+
+        en_ampersand {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <>;
+            layers = <0>;
+        };
+
+        ru_ampersand {
+            bindings = <&en AMPERSAND>;
+            key-positions = <>;
+            layers = <1>;
+        };
+
+        en_pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <>;
+            layers = <0>;
+        };
+
+        ru_pipe {
+            bindings = <&en PIPE>;
+            key-positions = <>;
+            layers = <1>;
+        };
+
+        en_dollar {
+            bindings = <&kp DOLLAR>;
+            key-positions = <>;
+            layers = <0>;
+        };
+
+        ru_dollar {
+            bindings = <&en DOLLAR>;
+            key-positions = <>;
+            layers = <0>;
+        };
+
+        equal {
+            bindings = <&en EQUAL>;
+            key-positions = <>;
+            layers = <0 1>;
+        };
+
+        en_double_quotes {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <>;
+            layers = <0>;
+        };
+
+        ru_double_quotes {
+            bindings = <&kp RU_DOUBLE_QUOTES>;
+            key-positions = <>;
+            layers = <0>;
+        };
+
+        en_sqt {
+            bindings = <&kp SQT>;
+            key-positions = <>;
+            layers = <0>;
+        };
+
+        ru_sqt {
+            bindings = <&en SQT>;
+            key-positions = <>;
+            layers = <0>;
+        };
     };
 
     keymap {
