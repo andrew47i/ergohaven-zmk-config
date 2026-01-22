@@ -489,10 +489,10 @@
 
         symb_en {
             bindings = <
-&kp GRAVE  &kp ASTRK  &kp LEFT_BRACE  &kp PLUS  &kp RIGHT_BRACE   &kp HASH                              &none            &kp LESS_THAN     &kp EQUAL  &kp GREATER_THAN   &kp SLASH  &kp CARET
-&none      &none      &kp LPAR        &none     &hrml LSHFT RPAR  &none                                 &none            &kp LEFT_BRACKET  &none      &kp RIGHT_BRACKET  &none      &none
-&kp COMMA  &kp N1     &kp N2          &kp N3    &kp N4            &kp N5    &kp RU_NUMERO    &kp PRCNT  &kp N6           &kp N7            &kp N8     &kp N9             &kp N0     &kp DOT
-                                                &trans            &mo 5     &trans           &trans     &lt 5 BACKSPACE  &trans
+&kp GRAVE  &kp ASTRK   &none             &kp PLUS  &none           &kp HASH                              &none            &none            &none   &none              &kp SLASH      &kp CARET
+&none      &LESS_THAN  &kp LEFT_BRACKET  &LPAR     &kp LEFT_BRACE  &none                                 &none            &kp RIGHT_BRACE  &RPAR   &kp RIGHT_BRACKET  &GREATER_THAN  &none
+&kp COMMA  &kp N1      &kp N2            &kp N3    &kp N4          &kp N5    &kp RU_NUMERO    &kp PRCNT  &kp N6           &kp N7           &kp N8  &kp N9             &kp N0         &kp DOT
+                                                   &trans          &mo 5     &trans           &trans     &lt 5 BACKSPACE  &trans
             >;
 
             display-name = "Symb EN";
@@ -501,10 +501,10 @@
         symb_ru {
             display-name = "Symb RU";
             bindings = <
-&en GRAVE     &kp ASTRK  &en LEFT_BRACE  &kp PLUS  &en RIGHT_BRACE  &en HASH                                   &none            &en LESS_THAN     &kp EQUAL  &en GREATER_THAN   &kp RU_SLASH  &kp CARET
-&none         &none      &kp LPAR        &none     &mt LSHFT RPAR   &none                                      &none            &en LEFT_BRACKET  &none      &en RIGHT_BRACKET  &none         &none
-&kp RU_COMMA  &kp N1     &kp N2          &kp N3    &kp N4           &kp N5    &kp RU_NUMERO    &en RU_PERCENT  &kp N6           &kp N7            &kp N8     &kp N9             &kp N0        &kp RU_DOT
-                                                   &trans           &mo 5     &trans           &trans          &lt 5 BACKSPACE  &trans
+&en GRAVE     &kp ASTRK      &none             &kp PLUS  &none           &en HASH                                   &none            &none            &none     &none              &kp RU_SLASH      &kp CARET
+&none         &en LESS_THAN  &en LEFT_BRACKET  &kp LPAR  &en LEFT_BRACE  &none                                      &none            &en RIGHT_BRACE  &kp RPAR  &en RIGHT_BRACKET  &en GREATER_THAN  &none
+&kp RU_COMMA  &kp N1         &kp N2            &kp N3    &kp N4          &kp N5    &kp RU_NUMERO    &en RU_PERCENT  &kp N6           &kp N7           &kp N8    &kp N9             &kp N0            &kp RU_DOT
+                                                         &trans          &mo 5     &trans           &trans          &lt 5 BACKSPACE  &trans
             >;
         };
 
