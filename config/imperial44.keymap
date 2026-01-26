@@ -525,10 +525,10 @@
 
         symb_en {
             bindings = <
-&kp GRAVE  &kp ASTRK      &none             &none     &none           &kp HASH                               &none            &m_equal         &m_nequal  &m_less            &m_great          &kp CARET
-&none      &kp LESS_THAN  &kp LEFT_BRACKET  &kp LPAR  &kp LEFT_BRACE  &kp COMMA                              &kp DOT          &kp RIGHT_BRACE  &kp RPAR   &kp RIGHT_BRACKET  &kp GREATER_THAN  &none
-&none      &kp N1         &kp N2            &kp N3    &kp N4          &kp N5     &kp RU_NUMERO    &kp PRCNT  &kp N6           &kp N7           &kp N8     &kp N9             &kp N0            &none
-                                                      &trans          &mo 5      &trans           &trans     &lt 5 BACKSPACE  &trans
+&kp GRAVE  &kp ASTRK      &none             &none     &none           &kp HASH                                     &none            &m_equal         &m_nequal  &m_less            &m_great          &kp CARET
+&none      &kp LESS_THAN  &kp LEFT_BRACKET  &kp LPAR  &kp LEFT_BRACE  &kp COMMA                                    &kp DOT          &kp RIGHT_BRACE  &kp RPAR   &kp RIGHT_BRACKET  &kp GREATER_THAN  &none
+&none      &kp N1         &kp N2            &kp N3    &kp N4          &kp N5           &kp RU_NUMERO    &kp PRCNT  &kp N6           &kp N7           &kp N8     &kp N9             &kp N0            &none
+                                                      &trans          &lt 5 BACKSPACE  &trans           &trans     &lt 5 BACKSPACE  &trans
             >;
 
             display-name = "Symb EN";
@@ -537,10 +537,10 @@
         symb_ru {
             display-name = "Symb RU";
             bindings = <
-&en GRAVE  &kp ASTRK      &none             &none     &none           &en HASH                                       &none            &none            &none     &none              &none             &kp CARET
-&none      &en LESS_THAN  &en LEFT_BRACKET  &kp LPAR  &en LEFT_BRACE  &kp RU_COMMA                                   &kp RU_DOT       &en RIGHT_BRACE  &kp RPAR  &en RIGHT_BRACKET  &en GREATER_THAN  &none
-&none      &kp N1         &kp N2            &kp N3    &kp N4          &kp N5        &kp RU_NUMERO    &en RU_PERCENT  &kp N6           &kp N7           &kp N8    &kp N9             &kp N0            &none
-                                                      &trans          &mo 5         &trans           &trans          &lt 5 BACKSPACE  &trans
+&en GRAVE  &kp ASTRK      &none             &none     &none           &en HASH                                          &none            &none            &none     &none              &none             &kp CARET
+&none      &en LESS_THAN  &en LEFT_BRACKET  &kp LPAR  &en LEFT_BRACE  &kp RU_COMMA                                      &kp RU_DOT       &en RIGHT_BRACE  &kp RPAR  &en RIGHT_BRACKET  &en GREATER_THAN  &none
+&none      &kp N1         &kp N2            &kp N3    &kp N4          &kp N5           &kp RU_NUMERO    &en RU_PERCENT  &kp N6           &kp N7           &kp N8    &kp N9             &kp N0            &none
+                                                      &trans          &lt 5 BACKSPACE  &trans           &trans          &lt 5 BACKSPACE  &trans
             >;
         };
 
@@ -580,9 +580,9 @@
         Func {
             label = "Func";
             bindings = <
-&studio_unlock  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3          &bt BT_SEL 4                   &none  &kp LG(MINUS)      &kp LG(PLUS)      &kp LG(N0)  &none     &tog 6
-&mo 8           &bt BT_CLR    &out OUT_USB  &out OUT_BLE  &kp LS(LG(NUMBER_5))  &kp BACKSPACE                  &none  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &kp C_MUTE  &dec_brt  &inc_brt
-&none           &kp LG(Z)     &kp LG(X)     &kp LG(C)     &kp LG(V)             &kp LG(B)      &none    &none  &none  &kp C_PREV         &kp C_PLAY_PAUSE  &kp C_NEXT  &kp F23   &kp F24
+&studio_unlock  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3          &bt BT_SEL 4                   &none  &kp LG(MINUS)      &kp LG(PLUS)     &kp LG(N0)  &none     &tog 6
+&mo 8           &bt BT_CLR    &out OUT_USB  &out OUT_BLE  &kp LS(LG(NUMBER_5))  &kp BACKSPACE                  &none  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE  &dec_brt  &inc_brt
+&none           &kp LG(Z)     &kp LG(X)     &kp LG(C)     &kp LG(V)             &kp LG(B)      &none    &none  &none  &kp C_PREV         &kp LS(C_NEXT)   &kp C_PP    &kp F23   &kp F24
                                                           &none                 &none          &none    &none  &none  &none
             >;
         };
