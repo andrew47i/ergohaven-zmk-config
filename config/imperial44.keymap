@@ -525,10 +525,10 @@
 
         symb_en {
             bindings = <
-&kp GRAVE  &kp ASTRK      &none             &none     &none           &kp HASH                                     &none            &m_equal         &m_nequal  &m_less            &m_great          &kp CARET
-&none      &kp LESS_THAN  &kp LEFT_BRACKET  &kp LPAR  &kp LEFT_BRACE  &kp COMMA                                    &kp DOT          &kp RIGHT_BRACE  &kp RPAR   &kp RIGHT_BRACKET  &kp GREATER_THAN  &none
-&none      &kp N1         &kp N2            &kp N3    &kp N4          &kp N5           &kp RU_NUMERO    &kp PRCNT  &kp N6           &kp N7           &kp N8     &kp N9             &kp N0            &none
-                                                      &trans          &lt 5 BACKSPACE  &trans           &trans     &lt 5 BACKSPACE  &trans
+&none  &kp GRAVE      &kp CARET         &none     &kp PRCNT       &kp HASH                           &none            &m_equal         &m_nequal  &m_less            &m_great          &none
+&none  &kp LESS_THAN  &kp LEFT_BRACKET  &kp LPAR  &kp LEFT_BRACE  &kp COMMA                          &kp DOT          &kp RIGHT_BRACE  &kp RPAR   &kp RIGHT_BRACKET  &kp GREATER_THAN  &none
+&none  &kp N1         &kp N2            &kp N3    &kp N4          &kp N5           &none     &none   &kp N6           &kp N7           &kp N8     &kp N9             &kp N0            &none
+                                                  &trans          &lt 5 BACKSPACE  &trans    &trans  &lt 5 BACKSPACE  &trans
             >;
 
             display-name = "Symb EN";
@@ -537,10 +537,10 @@
         symb_ru {
             display-name = "Symb RU";
             bindings = <
-&en GRAVE  &kp ASTRK      &none             &none     &none           &en HASH                                          &none            &none            &none     &none              &none             &kp CARET
-&none      &en LESS_THAN  &en LEFT_BRACKET  &kp LPAR  &en LEFT_BRACE  &kp RU_COMMA                                      &kp RU_DOT       &en RIGHT_BRACE  &kp RPAR  &en RIGHT_BRACKET  &en GREATER_THAN  &none
-&none      &kp N1         &kp N2            &kp N3    &kp N4          &kp N5           &kp RU_NUMERO    &en RU_PERCENT  &kp N6           &kp N7           &kp N8    &kp N9             &kp N0            &none
-                                                      &trans          &lt 5 BACKSPACE  &trans           &trans          &lt 5 BACKSPACE  &trans
+&none  &en GRAVE      &kp CARET         &none     &en RU_PERCENT  &en HASH                           &kp RU_NUMERO    &none            &none     &none              &none             &none
+&none  &en LESS_THAN  &en LEFT_BRACKET  &kp LPAR  &en LEFT_BRACE  &kp RU_COMMA                       &kp RU_DOT       &en RIGHT_BRACE  &kp RPAR  &en RIGHT_BRACKET  &en GREATER_THAN  &none
+&none  &kp N1         &kp N2            &kp N3    &kp N4          &kp N5           &none     &none   &kp N6           &kp N7           &kp N8    &kp N9             &kp N0            &none
+                                                  &trans          &lt 5 BACKSPACE  &trans    &trans  &lt 5 BACKSPACE  &trans
             >;
         };
 
@@ -589,10 +589,10 @@
 
         Num {
             bindings = <
-&none  &none  &none        &kp KP_SLASH  &kp KP_MULTIPLY  &none                                &none         &kp N9  &kp N0  &none   &none   &none
-&none  &none  &kp PERCENT  &kp KP_MINUS  &kp KP_PLUS      &none                                &kp KP_DOT    &kp N1  &kp N2  &kp N3  &kp N4  &none
-&none  &none  &none        &none         &none            &none  &none           &none         &kp KP_COMMA  &kp N5  &kp N6  &kp N7  &kp N8  &none
-                                         &none            &none  &kp KP_EQUAL    &kp KP_EQUAL  &none         &none
+&none  &none  &none        &kp KP_SLASH  &kp KP_MULTIPLY  &none                                &none          &kp N9  &kp N0  &none   &none   &none
+&none  &none  &kp PERCENT  &kp KP_MINUS  &kp KP_PLUS      &none                                &kp KP_DOT     &kp N1  &kp N2  &kp N3  &kp N4  &none
+&none  &none  &none        &none         &none            &none  &none           &none         &kp KP_COMMA   &kp N5  &kp N6  &kp N7  &kp N8  &none
+                                         &none            &none  &kp KP_EQUAL    &kp KP_EQUAL  &kp BACKSPACE  &none
             >;
 
             label = "Num";
