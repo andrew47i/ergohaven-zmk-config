@@ -159,6 +159,15 @@
             #binding-cells = <0>;
             mods = <(MOD_RGUI|MOD_LGUI)>;
         };
+
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NEW_BEHAVIOR";
+            #binding-cells = <0>;
+            bindings = <&kp RU_CYRILLIC_SOFT_SIGN>, <&kp RU_CYRILLIC_HARD_SIGN>;
+
+            tapping-term-ms = <300>;
+        };
     };
 
     macros {
