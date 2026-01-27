@@ -582,7 +582,7 @@
             bindings = <
 &studio_unlock  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3          &bt BT_SEL 4                   &none  &kp LG(MINUS)      &kp LG(PLUS)     &kp LG(N0)  &none     &tog 6
 &mo 8           &bt BT_CLR    &out OUT_USB  &out OUT_BLE  &kp LS(LG(NUMBER_5))  &kp BACKSPACE                  &none  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE  &dec_brt  &inc_brt
-&none           &kp LG(Z)     &kp LG(X)     &kp LG(C)     &kp LG(V)             &kp LG(B)      &none    &none  &none  &kp C_PREV         &kp LS(C_NEXT)   &kp C_PP    &kp F23   &kp F24
+&none           &kp LG(Z)     &kp LG(X)     &kp LG(C)     &kp LG(V)             &kp LG(B)      &none    &none  &none  &kp C_PREV         &kp C_NEXT       &kp C_PP    &kp F23   &kp F24
                                                           &none                 &none          &none    &none  &none  &none
             >;
         };
