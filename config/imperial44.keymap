@@ -49,7 +49,7 @@
             #binding-cells = <0>;
             bindings = <&kp RU_CYRILLIC_SOFT_SIGN>, <&kp RU_CYRILLIC_HARD_SIGN>;
 
-            tapping-term-ms = <150>;
+            tapping-term-ms = <250>;
         };
 
         en_qmark_excl: en_qmark_excl {
