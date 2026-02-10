@@ -26,7 +26,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            hold-trigger-key-positions = <19 20 21 22>;
+            hold-trigger-key-positions = <20 21 22>;
             quick-tap-ms = <150>;
             tapping-term-ms = <200>;
             require-prior-idle-ms = <125>;
@@ -176,6 +176,19 @@
 
             #binding-cells = <2>;
             hold-trigger-key-positions = <16>;
+            quick-tap-ms = <150>;
+            tapping-term-ms = <200>;
+            flavor = "hold-preferred";
+            hold-trigger-on-release;
+        };
+
+        f_hrmr: f_hrmr {
+            compatible = "zmk,behavior-hold-tap";
+            label = "F_HRMR";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            hold-trigger-key-positions = <19>;
             quick-tap-ms = <150>;
             tapping-term-ms = <200>;
             flavor = "hold-preferred";
@@ -517,10 +530,10 @@
 
         base_en {
             bindings = <
-&kp GRAVE  &kp Q          &kp W         &kp E         &kp R        &kp T                                    &kp Y            &kp U        &kp I         &kp O         &kp P             &none
-&kp ESC    &hrml LCTRL A  &hrml LALT S  &hrml LGUI D  &mt LSHFT F  &kp G                                    &kp H            &mt RSHFT J  &hrmr RGUI K  &hrmr RALT L  &hrmr RCTRL SEMI  &kp SINGLE_QUOTE
-&none      &kp Z          &kp X         &kp C         &kp V        &kp B        &none          &none        &kp N            &kp M        &kp COMMA     &kp DOT       &kp SLASH         &kp BACKSLASH
-                                                      &lt 4 TAB    &lt 2 SPACE  &lt 7 ENTER    &lt 7 ENTER  &lt 2 BACKSPACE  &lt 4 DEL
+&kp GRAVE  &kp Q          &kp W         &kp E         &kp R            &kp T                                    &kp Y            &kp U            &kp I         &kp O         &kp P             &none
+&kp ESC    &hrml LCTRL A  &hrml LALT S  &hrml LGUI D  &f_hrml LSHFT F  &kp G                                    &kp H            &f_hrmr RSHFT J  &hrmr RGUI K  &hrmr RALT L  &hrmr RCTRL SEMI  &kp SINGLE_QUOTE
+&none      &kp Z          &kp X         &kp C         &kp V            &kp B        &none          &none        &kp N            &kp M            &kp COMMA     &kp DOT       &kp SLASH         &kp BACKSLASH
+                                                      &lt 4 TAB        &lt 2 SPACE  &lt 7 ENTER    &lt 7 ENTER  &lt 2 BACKSPACE  &lt 4 DEL
             >;
 
             display-name = "EN";
@@ -529,9 +542,9 @@
         base_ru {
             display-name = "RU";
             bindings = <
-&kp RU_CYRILLIC_IO  &kp RU_CYRILLIC_SHORT_I     &kp RU_CYRILLIC_TSE          &kp RU_CYRILLIC_U          &kp RU_CYRILLIC_KA           &kp RU_CYRILLIC_IE                    &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE      &kp RU_CYRILLIC_SHA        &kp RU_CYRILLIC_SHCHA      &kp RU_CYRILLIC_ZE           &kp RU_CYRILLIC_HA
-&kp ESC             &hrml LCTRL RU_CYRILLIC_EF  &hrml LALT RU_CYRILLIC_YERU  &hrml LGUI RU_CYRILLIC_VE  &f_hrml LSHFT RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                    &kp RU_CYRILLIC_ER  &mt LSHFT RU_CYRILLIC_O  &hrmr LGUI RU_CYRILLIC_EL  &hrmr LALT RU_CYRILLIC_DE  &hrmr LCTRL RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
-&none               &kp RU_CYRILLIC_YA          &kp RU_CYRILLIC_CHE          &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM           &kp RU_CYRILLIC_I   &none     &none   &kp RU_CYRILLIC_TE  &soft_sign_hard          &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU         &kp SLASH                    &kp BACKSLASH
+&kp RU_CYRILLIC_IO  &kp RU_CYRILLIC_SHORT_I     &kp RU_CYRILLIC_TSE          &kp RU_CYRILLIC_U          &kp RU_CYRILLIC_KA           &kp RU_CYRILLIC_IE                    &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE          &kp RU_CYRILLIC_SHA        &kp RU_CYRILLIC_SHCHA      &kp RU_CYRILLIC_ZE           &kp RU_CYRILLIC_HA
+&kp ESC             &hrml LCTRL RU_CYRILLIC_EF  &hrml LALT RU_CYRILLIC_YERU  &hrml LGUI RU_CYRILLIC_VE  &f_hrml LSHFT RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                    &kp RU_CYRILLIC_ER  &f_hrmr LSHFT RU_CYRILLIC_O  &hrmr LGUI RU_CYRILLIC_EL  &hrmr LALT RU_CYRILLIC_DE  &hrmr LCTRL RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
+&none               &kp RU_CYRILLIC_YA          &kp RU_CYRILLIC_CHE          &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM           &kp RU_CYRILLIC_I   &none     &none   &kp RU_CYRILLIC_TE  &soft_sign_hard              &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU         &kp SLASH                    &kp BACKSLASH
                                                                                                         &lt 4 TAB                    &lt 3 SPACE         &trans    &trans  &lt 3 BACKSPACE     &lt 4 DELETE
             >;
         };
