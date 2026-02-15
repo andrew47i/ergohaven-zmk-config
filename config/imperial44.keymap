@@ -551,7 +551,7 @@
 
         symb_en {
             bindings = <
-&none  &kp GRAVE      &kp CARET         &none     &kp PRCNT       &kp HASH                           &none            &m_equal         &m_nequal  &m_less            &m_great          &none
+&none  &kp GRAVE      &kp CARET         &none     &kp PRCNT       &kp HASH                           &m_far           &m_equal         &m_nequal  &m_less            &m_great          &none
 &none  &kp LESS_THAN  &kp LEFT_BRACKET  &kp LPAR  &kp LEFT_BRACE  &kp COMMA                          &kp DOT          &kp RIGHT_BRACE  &kp RPAR   &kp RIGHT_BRACKET  &kp GREATER_THAN  &none
 &none  &kp N1         &kp N2            &kp N3    &kp N4          &kp N5           &none     &none   &kp N6           &kp N7           &kp N8     &kp N9             &kp N0            &none
                                                   &trans          &lt 5 BACKSPACE  &trans    &trans  &lt 5 BACKSPACE  &trans
@@ -563,10 +563,10 @@
         symb_ru {
             display-name = "Symb RU";
             bindings = <
-&none  &en GRAVE      &kp CARET         &none     &en RU_PERCENT  &en HASH                           &kp RU_NUMERO    &none            &none     &none              &none             &none
-&none  &en LESS_THAN  &en LEFT_BRACKET  &kp LPAR  &en LEFT_BRACE  &kp RU_COMMA                       &kp RU_DOT       &en RIGHT_BRACE  &kp RPAR  &en RIGHT_BRACKET  &en GREATER_THAN  &none
-&none  &kp N1         &kp N2            &kp N3    &kp N4          &kp N5           &none     &none   &kp N6           &kp N7           &kp N8    &kp N9             &kp N0            &none
-                                                  &trans          &lt 5 BACKSPACE  &trans    &trans  &lt 5 BACKSPACE  &trans
+&none  &en GRAVE      &en CARET         &kp RU_NUMERO  &en RU_PERCENT  &en HASH                           &none            &none            &none     &none              &none             &none
+&none  &en LESS_THAN  &en LEFT_BRACKET  &kp LPAR       &en LEFT_BRACE  &kp RU_COMMA                       &kp RU_DOT       &en RIGHT_BRACE  &kp RPAR  &en RIGHT_BRACKET  &en GREATER_THAN  &none
+&none  &kp N1         &kp N2            &kp N3         &kp N4          &kp N5           &none     &none   &kp N6           &kp N7           &kp N8    &kp N9             &kp N0            &none
+                                                       &trans          &lt 5 BACKSPACE  &trans    &trans  &lt 5 BACKSPACE  &trans
             >;
         };
 
