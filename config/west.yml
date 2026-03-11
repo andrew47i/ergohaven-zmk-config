@@ -2,8 +2,6 @@ manifest:
   remotes:
     - name: ergohaven
       url-base: https://github.com/ergohaven
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
     - name: jewtvet
       url-base: https://github.com/jewtvet
   projects:
@@ -11,10 +9,6 @@ manifest:
       remote: ergohaven
       revision: main
       import: config/west.yml
-    - name: zmk
-      remote: zmkfirmware
-      revision: main
-      import: app/west.yml
     - name: zmk-ruen
       remote: jewtvet
       revision: main
