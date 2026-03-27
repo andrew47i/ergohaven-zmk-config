@@ -491,7 +491,7 @@
 
         comma {
             bindings = <&kp RU_COMMA>;
-            key-positions = <32 33>;
+            key-positions = <33 35>;
             layers = <1>;
         };
     };
